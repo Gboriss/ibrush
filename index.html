@@ -3,41 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/font.css">
     <title>iBrush</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="row justify-content">
-                <div class="header__title">
-                    <h1 class="title">Путь JavaScript</h1>
-                </div>
-                <div class="section-item__header-text">
-                    <div class="text text_simple">
-                        <p>Можно выделить три основных направления для прогресса JavaScript</p>
+    <section class="section-header">
+        <div class="wrapper">
+            <div class="header__title">
+                <h1 class="title">Путь JavaScript</h1>
+            </div>
+            <div class="section-book">
+                <div class="section-book__image">
+                    <img id="image" src="./src/img/books.png" alt="books">
+                    <div class="section-book__date">
+                        <span class="date">12</span>
+                        <span class="month">апреля</span>
+                    </div>
+                    <div class="scrollBar">
+                        <div class="scrollBar__progress"></div>
                     </div>
                 </div>
-                <div class="section-item__header-data">
-                    <div class="data">
-                        <div class="data__block">
-                            <div class="data__date">
-                                12
-                            </div>
-                            <div class="data__month">
-                                апреля
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-item__header-img">
-                        <img src="img/books.png" alt="image">
+                <div class="section-book__text">
+                    Можно выделить три основных направления для прогресса JavaScript
+                </div>
+            </div>
+            <div class="breakLine"></div>
+            <div class="quote">
+                <div class="quote__title">
+                    <p class="title"><strong>Серверный</strong> JavaScript</p>
+                </div>
+                <div class="quote__wrapper">
+                    <img class="quote__icon" src="./src/img/quote.png" alt="quote">
+                    <div class="quote__contentWrapper">
+                        <p class="quote__content">Разработчики и клиенты часто 
+                            неправильно понимают, что такое система. Они видят графический 
+                            интерфейс и думают, что он и есть система. Они определяют 
+                            систему в терминах графического интерфейса и считают, 
+                            что должны сразу начать работу с графическим интерфейсом. 
+                            Они не понимают важнейшего принципа: ввод/вывод не важен.
+                        </p>
+                        <div class="quote__author">Р. Мартин</div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <nav class="nav-menu">
+    <section class="section-banner">
+        <div class="wrapper">
+            <p class="section-banner__banner">Реклама на <a href="/">blabla.com</a></p>
+            <div class="section-banner__image">
+                <img src="./src/img/banner.png" alt="banner">
+            </div>
+        </div>
+    </section>
 
-    </nav>
+    <section class="section-conclusion">
+        <div class="wrapper">
+            <h2 class="section-conclusion__title">Заключение</h2>
+            <p class="section-conclusion__content">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство
+                диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ.
+                Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора,
+                интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит
+                ритм.
+            </p>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class="wrapper">
+            <h3 class="section-form__title">Оцените статью</h3>
+            <div class="stars">
+                <span class="stars__item checked">☆</span>
+                <span class="stars__item checked">☆</span>
+                <span class="stars__item checked">☆</span>
+                <span class="stars__item checked">☆</span>
+                <span class="stars__item">☆</span>
+            </div>
+            <h2 class="section-form__title title">Добавить комментарий к книге</h2>
+            <div class="form">
+                <div class="form__item">
+                    <input class="field" type="text" name="name" placeholder="Имя">
+                    <input class="field" type="email" name="mail" placeholder="E-mail">
+                    <div class="field field_arrow">
+                        <div class="text_field" id="books">
+                            <p>Выберите книгу</p>
+                        </div>
+                        <ul class="select">
+                            <li class="select__item">
+                                <div class="text_li">JavaScript ниндзя</div>
+                            </li>
+                            <li class="select__item">
+                                <div class="text_li">Pragmatic Guide to JavaScript</div>
+                            </li>
+                            <li class="select__item">
+                                <div class="text_li">Pro JavaScript Techniques</div>
+                            </li>
+                            <li class="select__item">
+                                <div class="text_li">Выразительный JavaScript</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form__item">
+                <textarea class="field field_wide" type="textarea" placeholder="Ваш отзыв"></textarea>
+            </div>
+            <div class="form__item">
+                <div type="button" class="button">Отправить</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-similar">
+        <div class="wrapper">
+            <h3 class="text">Похожие посты</h3>
+   
+                <div class="section-item__posts slider">
+                    <div class="news__item">
+                        <img class="news__img" src="./src/img/angular.png" alt="slider">
+                        <p class="news__text">События жизненного цикла ReactJS</p>
+                    </div>
+                    <div class="news__item">
+                        <img class="news__img"  src="./src/img/grid.png" alt="slider">
+                        <p class="news__text">CSS Grids. Полное руководство</p>
+                    </div>
+                    <div class="news__item">
+                        <img class="news__img"  src="./src/img/js.png" alt="slider">
+                        <p class="news__text">Асинхронность в JavaScript</p>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>

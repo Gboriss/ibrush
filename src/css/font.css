@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Aria';
+	src: url('../css/font/ArialMT.woff2') format('woff2'),
+		 url('../css/font/ArialMT.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Consolas';
+	src: url('../css/font/Consolas.woff2') format('woff2'),
+		 url('../css/font/Consolas.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ConsolasBold';
+	src: url('../css/font/Consolas-Bold.woff2') format('woff2'),
+		 url('../css/font/Consolas-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../css/font/HelveticaNeueCyr-Thin.woff2') format('woff2'),
+		 url('../css/font/HelveticaNeueCyr-Thin.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Italic';
+	src: url('../css/font/OpenSans-Italic.woff2') format('woff2'),
+		 url('../css/font/OpenSans-Italic.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../css/font/OpenSans-Regular.woff2') format('woff2'),
+		 url('../css/font/OpenSans-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
