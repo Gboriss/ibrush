@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./src/css/font.css">
-    <title>iBrush</title>
+    <title>iBrus test</title>
 </head>
 <body>
     <section class="section-header">
         <div class="wrapper">
             <div class="header__title">
-                <h1 class="title">Путь JavaScript</h1>
+                <h1 class="title"><span>Путь JavaScript</span></h1>
             </div>
             <div class="section-book">
+                <p class="section-book__text">
+                    Можно выделить три основных направления для прогресса JavaScript
+                </p>
                 <div class="section-book__image">
                     <img id="image" src="./src/img/books.png" alt="books">
                     <div class="section-book__date">
                         <span class="date">12</span>
                         <span class="month">апреля</span>
                     </div>
-                    <div class="scrollBar">
+                    <!-- <div class="scrollBar">
                         <div class="scrollBar__progress"></div>
-                    </div>
-                </div>
-                <div class="section-book__text">
-                    Можно выделить три основных направления для прогресса JavaScript
+                    </div> -->
                 </div>
             </div>
-            <div class="breakLine"></div>
             <div class="quote">
                 <div class="quote__title">
-                    <p class="title"><strong>Серверный</strong> JavaScript</p>
+                    <h2 class="title">Серверный <span>JavaScript</span></h2>
                 </div>
                 <div class="quote__wrapper">
                     <img class="quote__icon" src="./src/img/quote.png" alt="quote">
@@ -42,7 +42,7 @@
                             что должны сразу начать работу с графическим интерфейсом. 
                             Они не понимают важнейшего принципа: ввод/вывод не важен.
                         </p>
-                        <div class="quote__author">Р. Мартин</div>
+                        <div class="quote__author">— Р. Мартин</div>
                     </div>
                 </div>
             </div>
@@ -52,9 +52,7 @@
     <section class="section-banner">
         <div class="wrapper">
             <p class="section-banner__banner">Реклама на <a href="/">blabla.com</a></p>
-            <div class="section-banner__image">
-                <img src="./src/img/banner.png" alt="banner">
-            </div>
+            <div class="section-banner__image"></div>
         </div>
     </section>
 
@@ -74,61 +72,58 @@
         <div class="wrapper">
             <h3 class="section-form__title">Оцените статью</h3>
             <div class="stars">
-                <span class="stars__item checked">☆</span>
-                <span class="stars__item checked">☆</span>
-                <span class="stars__item checked">☆</span>
-                <span class="stars__item checked">☆</span>
                 <span class="stars__item">☆</span>
+                <span class="stars__item checked">☆</span>
+                <span class="stars__item checked">☆</span>
+                <span class="stars__item checked">☆</span>
+                <span class="stars__item checked">☆</span>
             </div>
-            <h2 class="section-form__title title">Добавить комментарий к книге</h2>
-            <div class="form">
-                <div class="form__item">
-                    <input class="field" type="text" name="name" placeholder="Имя">
-                    <input class="field" type="email" name="mail" placeholder="E-mail">
-                    <div class="field field_arrow">
-                        <div class="text_field" id="books">
-                            <p>Выберите книгу</p>
-                        </div>
-                        <ul class="select">
-                            <li class="select__item">
-                                <div class="text_li">JavaScript ниндзя</div>
-                            </li>
-                            <li class="select__item">
-                                <div class="text_li">Pragmatic Guide to JavaScript</div>
-                            </li>
-                            <li class="select__item">
-                                <div class="text_li">Pro JavaScript Techniques</div>
-                            </li>
-                            <li class="select__item">
-                                <div class="text_li">Выразительный JavaScript</div>
-                            </li>
-                        </ul>
+            <h3 class="section-form__title title">Добавить комментарий к книге</h3>
+            <form class="form__item">
+                <input class="field" type="text" name="name" placeholder="Имя">
+                <input class="field" type="email" name="mail" placeholder="E-mail">
+                <div class="field field_arrow">
+                    <div class="text_field" id="books">
+                        <p>Выберите книгу</p>
                     </div>
+                    <ul class="select">
+                        <li class="select__item">
+                            <div class="text_li">JavaScript ниндзя</div>
+                        </li>
+                        <li class="select__item">
+                            <div class="text_li">Pragmatic Guide to JavaScript</div>
+                        </li>
+                        <li class="select__item">
+                            <div class="text_li">Pro JavaScript Techniques</div>
+                        </li>
+                        <li class="select__item">
+                            <div class="text_li">Выразительный JavaScript</div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </form>
             <div class="form__item">
                 <textarea class="field field_wide" type="textarea" placeholder="Ваш отзыв"></textarea>
             </div>
             <div class="form__item">
-                <div type="button" class="button">Отправить</div>
+                <button type="button" class="button">Отправить</button>
             </div>
         </div>
     </section>
 
-    <section class="section-similar">
+    <section class="similar">
         <div class="wrapper">
             <h3 class="text">Похожие посты</h3>
-   
-                <div class="section-item__posts slider">
-                    <div class="news__item">
-                        <img class="news__img" src="./src/img/angular.png" alt="slider">
+                <div class="section-item__posts slider main-carousel">
+                    <div class="news__item slide">
+                        <!-- <img class="news__img" src="./src/img/angular.png" alt="slider"> -->
                         <p class="news__text">События жизненного цикла ReactJS</p>
                     </div>
-                    <div class="news__item">
+                    <div class="news__item slide">
                         <img class="news__img"  src="./src/img/grid.png" alt="slider">
                         <p class="news__text">CSS Grids. Полное руководство</p>
                     </div>
-                    <div class="news__item">
+                    <div class="news__item slide">
                         <img class="news__img"  src="./src/img/js.png" alt="slider">
                         <p class="news__text">Асинхронность в JavaScript</p>
                     </div>
