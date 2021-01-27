@@ -32,3 +32,4 @@ let mainCarousel = new Flickity( '.main-carousel', {
     wrapAround: true,
     prevNextButtons: false,
 })
+
